@@ -90,9 +90,9 @@ d3.json("data.json", function(error, data) {
     .enter().append("ellipse")
       .attr("class", "dot")
       .attr("rx", function(d) { return (d.end-d.start)/100000000; })
-      .attr("ry", function(d) { return d.commits / 20.0; })
-      .attr("cx", function(d) { return x(d.start); })
-      .attr("cy", function(d) { return y(d.comments); })
+      .attr("ry", function(d) { return d.commits / 10.0; })
+      .attr("cx", function(d) { return x(d.start) *0.95; })
+      .attr("cy", function(d) { return y(Math.floor(Math.random()*350)) - 30; })
       .style("fill", function(d) { return color(d.author); });
 
   var legend = svg.selectAll(".legend")
