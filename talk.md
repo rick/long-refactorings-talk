@@ -14,21 +14,16 @@
 
 ---
 
-## are simply refactorings
-
----
-
-## are simply refactorings
-### only, they end up taking a lot longer than most refactorings
-
----
-
+## long refactorings
 ## are simply refactorings
 ### only, (IN HINDSIGHT) they end up taking a lot longer than most refactorings
 
 ---
 
- - but, stepping back for a second, what's refactoring?
+### Stepping back for a second...
+## What *is* "refactoring"?
+
+---
    - low-level, behavior-preserving changes to the implementation of a system
    - show the martin fowler book
    - example of a simple refactoring (extract method)
