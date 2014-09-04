@@ -198,12 +198,6 @@
 
 ---
 
-![](images/india-bus.jpg)
-
-## wankery is a waste of resources.
-
----
-
 ## refactoring to understand a system
 ### is useful if it is directed towards implementing a feature or fixing a bug
 
