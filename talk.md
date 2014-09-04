@@ -585,9 +585,47 @@
 
 ---
 
----
+![](images/permission-bug-6.png)
+
+**September 2012**
 
 ---
+
+![](images/permission-bug-7.png)
+
+**September 2012**
+
+---
+
+![](images/permission-bug-8.png)
+
+**September 2012**
+
+---
+
+
+![](images/permission-bug-9.png)
+
+**September 2012**
+
+---
+
+
+![](images/permission-bug-9.png)
+
+**November 2012**
+
+---
+
+## A Long Refactoring Kicks Off
+
+### Ongoing quality problems in an important part of the system
+### Repeated bugfixing did not improve quality significantly
+### High level feature changes roadblocked by this core subsystem
+
+---
+
+
 
 
 ## Image credits:
