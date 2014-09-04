@@ -153,14 +153,48 @@
 
 ---
 
+![](images/small-car.jpg)
+
+## refactoring a toy system
+
+---
+
+![](images/small-car.jpg)
+
+## refactoring a toy system
+
+### it could be for learning purposes
+### or perhaps the hope is that some day it will grow up to be a big system
+#### one that someone has a use for
+
+---
+
+![](images/small-car.jpg)
+
+## refactoring a toy system
+
+### The value is in building something useful
+### Even here, though, we have finite time and resources
+### So we choose what to work on
+
+---
+
+![](images/india-bus.jpg)
+
+## refactoring a system that people are actively using
+
+---
+
+---
+
+## Image credits:
+
+https://www.flickr.com/photos/mozul/31304173/
+https://www.flickr.com/photos/uspn/4894253589/
+
+---
 
 
-   - if you're refactoring on a system that no one is using, then either
-     - it's just wankery
-       - maybe with the goal of learning something
-     - or, if you're lucky, you're building up a system that someone will someday use
-     - but the value here is in building something useful
-     - regardless, we almost certainly don't have unlimited time and resources, and so we have to make tradeoffs on which things we do
    - if, on the other hand, you're working on a system that people are using,
      - you once again don't have unlimited time and resources
      - so you have to make choices about what you work on
