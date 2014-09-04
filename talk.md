@@ -576,7 +576,7 @@ https://www.flickr.com/photos/27271711@N04/3643199789/
     - began to dig in and map out things, try candidate small refactorings on certain areas, floating larger refactoring projects to get things under control
 
     - more links to PRs
-      - then @defunkt had long-range ideas about how organizations, etc., could be reworked (only some of which have landed so far) (link parts of his discussion)
+      - then defunkt had long-range ideas about how organizations, etc., could be reworked (only some of which have landed so far) (link parts of his discussion)
     - that catalyzed a Big Project -- "Orgs Next" -- a business-level feature that is roadblocked by our permissioning system
     - we coalesced a team, really two teams -- a front-end user-facing team, and a back-end team working on removing the roadblocks to get there
     - Capabilities
