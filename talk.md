@@ -185,6 +185,72 @@
 
 ---
 
+![](images/india-bus.jpg)
+
+### Again, limited time and resources,
+### so we must make choices about what to work on,
+### because the time spent on one thing cannot be spent on another.
+
+---
+
+![](images/india-bus.jpg)
+
+## wankery is a waste of resources.
+
+---
+
+## refactoring to understand a system
+### is useful if it is directed towards implementing a feature or fixing a bug
+
+---
+
+## refactoring to bring behavior under test
+### is wasteful, unless it's being immediately driven by fixing a bug or implementing a feature
+
+---
+
+## refactoring to extract code for reuse
+### is wasteful, unless we have reached the point where a new feature is ready to use that extraction
+
+---
+
+## refactoring to improve some facet of the system
+### is generally a good reason to refactor, if this is the most important thing you could be working on right now
+
+---
+
+## refactoring to make room for a new feature
+### is great, presuming you're implementing that feature right now
+
+---
+
+## refactoring to prepare to fix a bug
+### also great, if you're fixing the bug right now
+
+---
+
+## optimization
+### part deux
+
+---
+
+## most refactorings are small or trivial
+
+<br/>
+
+### There's really no estimation involved:
+### look at the code, start making the changes.
+
+<br/>
+
+### We're using techniques in Martin Fowler's _Refactoring_ book.
+
+<br/>
+
+### The refactorings are a commit or few,
+### inside the boundary of a larger pull request,
+### dedicated to a feature or a bugfix.
+
 ---
 
 ## Image credits:
@@ -195,22 +261,6 @@ https://www.flickr.com/photos/uspn/4894253589/
 ---
 
 
-   - if, on the other hand, you're working on a system that people are using,
-     - you once again don't have unlimited time and resources
-     - so you have to make choices about what you work on
-       - -- because the time you spend working on one thing is time not spent working on another thing
-    - seen under that light, wankery is a waste of resources
-    - what about the reasons for refactoring we looked at?
-      - wankery -- well, it's a waste of time
-      - refactoring to understand a system -- is useful if it is directed towards implementing a feature or fixing a bug, otherwise it might well be wankery
-      - refactoring to bring behavior under test -- is generally just wasteful, unless it's being immediately driven by fixing a bug or implementing a feature
-      - refactoring to extract code for reuse -- is wasteful unless we have reached the point where a new feature is ready to use that extraction, otherwise, it's just wankery
-      - refactoring to improve some facet of the system -- is generally a good reason to refactor, presuming improving that facet of the system is the most important thing you could be working on right now, otherwise it's actually wasteful, hence, wankery
-      - refactoring to make room for a new feature -- is great, presuming you're implementing that feature right now, otherwise it's wankery
-      - refactoring to prepare to fix a bug -- also great, if you're fixing the bug right now, otherwise ... wankery.
-   - so, basically, if you are implementing an important feature or fixing an important bug, then refactoring, right now, at the point of pain, is useful, and most other things are wankery
-
-   - optimization, part deux
      - many, maybe even most, refactorings are trivial, or at least small
        - there's really no estimation involved -- look at the code, start making the changes
        - we're using techniques in Martin Fowler's _Refactoring_ book, basically
