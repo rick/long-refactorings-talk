@@ -234,6 +234,8 @@
 
 ---
 
+![](images/matchbox-car.jpg)
+
 ## most refactorings are small or trivial
 
 <br/>
@@ -253,18 +255,42 @@
 
 ---
 
+![](images/tonka-truck.jpg)
+
+## many refactorings are a bit larger
+
+<br />
+
+### Suitable for a pair of programmers working on an afternoon,
+### we can estimate them fairly accurately or do without estimation.
+
+<br />
+### We can use simple tools and processes, like feature branches, pair programming, a second or third Pull Request.
+
+<br />
+
+### We start to use more advanced techniques.
+
+---
+
+![](images/working-effectively.jpg)
+
+## We start to draw on these techniques
+
+<br/>
+
+### characterization testing, refactoring to tests, sensing variables, etc.
+
+---
+
 ## Image credits:
 
 https://www.flickr.com/photos/mozul/31304173/
 https://www.flickr.com/photos/uspn/4894253589/
+https://www.flickr.com/photos/nate_marsh/5213604228/
+https://www.flickr.com/photos/steveallen/3324325493/
 
 ---
-
-
-     - many, maybe even most, refactorings are trivial, or at least small
-       - there's really no estimation involved -- look at the code, start making the changes
-       - we're using techniques in Martin Fowler's _Refactoring_ book, basically
-       - the refactorings are a commit or few, inside the boundary of a larger pull request, dedicated to a feature or a bugfix
 
      - a lot of refactorings are a little larger, suitable for a pair of programmers sitting down one afternoon
        - we can typically estimate them, or do without estimation altogether
