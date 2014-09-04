@@ -554,7 +554,6 @@ https://www.flickr.com/photos/uspn/4894253589/
 https://www.flickr.com/photos/nate_marsh/5213604228/
 https://www.flickr.com/photos/steveallen/3324325493/
 https://www.flickr.com/photos/ckrug/162099232/
-https://www.flickr.com/photos/peterras/6637828115/
 https://www.flickr.com/photos/slagheap/156203875/
 https://www.flickr.com/photos/j3net/480637896/
 https://www.flickr.com/photos/jmabel/4516193497/
