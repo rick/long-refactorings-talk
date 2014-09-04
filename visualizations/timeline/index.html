@@ -26,7 +26,7 @@ var margin = {top: 20, right: 20, bottom: 30, left: 40},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
-var x = d3.scale.linear()
+var x = d3.time.scale()
     .range([0, width]);
 
 var y = d3.scale.linear()
@@ -36,7 +36,8 @@ var color = d3.scale.category10();
 
 var xAxis = d3.svg.axis()
     .scale(x)
-    .orient("bottom");
+    .orient("bottom")
+    .tickFormat(d3.time.format("%m/%Y"));
 
 var yAxis = d3.svg.axis()
     .scale(y)
@@ -48,14 +49,19 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.tsv("data.tsv", function(error, data) {
+var parseDate = d3.time.format.iso.parse;
+
+
+d3.json("data.json", function(error, data) {
   data.forEach(function(d) {
-    d.sepalLength = +d.sepalLength;
-    d.sepalWidth = +d.sepalWidth;
+    d.start    = parseDate(d.start)
+    d.end      = parseDate(d.end)
+    d.commit   = +d.commits;
+    d.comments = +d.comments;
   });
 
-  x.domain(d3.extent(data, function(d) { return d.sepalWidth; })).nice();
-  y.domain(d3.extent(data, function(d) { return d.sepalLength; })).nice();
+  x.domain(d3.extent(data, function(d) { return d.start; })).nice();
+  y.domain(d3.extent(data, function(d) { return d.commits; })).nice();
 
   svg.append("g")
       .attr("class", "x axis")
@@ -66,7 +72,7 @@ d3.tsv("data.tsv", function(error, data) {
       .attr("x", width)
       .attr("y", -6)
       .style("text-anchor", "end")
-      .text("Sepal Width (cm)");
+      .text("Time");
 
   svg.append("g")
       .attr("class", "y axis")
@@ -77,16 +83,17 @@ d3.tsv("data.tsv", function(error, data) {
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Sepal Length (cm)")
+      .text("Commits")
 
   svg.selectAll(".dot")
       .data(data)
-    .enter().append("circle")
+    .enter().append("ellipse")
       .attr("class", "dot")
-      .attr("r", 3.5)
-      .attr("cx", function(d) { return x(d.sepalWidth); })
-      .attr("cy", function(d) { return y(d.sepalLength); })
-      .style("fill", function(d) { return color(d.species); });
+      .attr("rx", function(d) { return (d.end-d.start)/100000000; })
+      .attr("ry", function(d) { return d.commits / 20.0; })
+      .attr("cx", function(d) { return x(d.start); })
+      .attr("cy", function(d) { return y(d.comments); })
+      .style("fill", function(d) { return color(d.author); });
 
   var legend = svg.selectAll(".legend")
       .data(color.domain())
