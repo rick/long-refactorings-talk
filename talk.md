@@ -432,9 +432,15 @@
 
 ### use techniques like _The Mikado Method_ to even explore the possible refactorings
 
+TODO - more Mikado here?
+
 ---
 
 ## getting real
+
+--
+
+## "abilities"
 
 ---
 
@@ -454,51 +460,51 @@ https://www.flickr.com/photos/j3net/480637896/i
 ---
 
   - let's get real
-      - I spent about 5 months working on the system and looking for the points of pain -- the places where bugs were prevalent, code quality was low, and the difficulty of working on the system
-      - Over the course of working on bugs in a number of places, it became clear that our permissioning system was bit-rotting
-        - leaky behavior - still see cached notifications or stars or mentions or, etc., on repositories you no longer had access to
-        - dashboards showing weird results, job queue jobs failing, help tickets related to permissions, etc.
-        - poor performance on some queries, slowing the system down
-        - developers not being able to reliably fix things in this area, not having a strategy on how to fix things
-      - began to dig in and map out things, try candidate small refactorings on certain areas, floating larger refactoring projects to get things under control
-        - https://github.com/github/github/pull/6087
-          - especially "permission from the boss": https://github.com/github/github/pull/6087#issuecomment-8670691
-        - https://github.com/github/github/issues/5072
-        - https://github.com/github/github/issues/5362
-        - https://github.com/github/github/pull/5143
-        - https://github.com/github/github/issues/4565
-        - https://github.com/github/github/pull/5077
-      - more links to PRs
-        - then @defunkt had long-range ideas about how organizations, etc., could be reworked (only some of which have landed so far) (link parts of his discussion)
-      - that catalyzed a Big Project -- "Orgs Next" -- a business-level feature that is roadblocked by our permissioning system
-      - we coalesced a team, really two teams -- a front-end user-facing team, and a back-end team working on removing the roadblocks to get there
-      - Capabilities
-      - Abilities
-      - Science
-      - Backscatter
-      - parallel permissioning systems running
-      - repository networks
-      - data quality and cleanup
-      - transitions, throttling
-      - making everything available for enterprise
-      - organization front-end changes without abilities (anti-corruption layers, etc.)
-      - making abilities be the source of truth for reads on teams and orgs
-      - making abilities be the source of truth for repositories
-      - removing science: no longer traversing old permission query paths
-      - eventual removal of update paths for old queries
-      - enterprise systems running transitions, data quality scripts
-  - rails3
-    - ongoing (2011 -> now)
-    - backporting strategy; overwhelmed by code changes; long branch
-    - guard-based strategy to backport all version changes to master
-    - aggressive graphing and logging
-    - staying out of the way of enterprise branch points
-    - reworking our script/* directory and configuration to allow toggling rails versions easily
-  - smoke -> gitrpc
-    - just completed, 2011 -> now
-    - piecewise replacement of one git layer with another
-    - graph instrumentation, exception tracking, extensive use of backscatter
-    - gradual increase in callers of gitrpc -- 20%, 40%, 50%, 80%, 90%, 95%, 98%, 99%, 99.5%, 99.9%, .... 100%
+    - I spent about 5 months working on the system and looking for the points of pain -- the places where bugs were prevalent, code quality was low, and the difficulty of working on the system
+    - Over the course of working on bugs in a number of places, it became clear that our permissioning system was bit-rotting
+      - leaky behavior - still see cached notifications or stars or mentions or, etc., on repositories you no longer had access to
+      - dashboards showing weird results, job queue jobs failing, help tickets related to permissions, etc.
+      - poor performance on some queries, slowing the system down
+      - developers not being able to reliably fix things in this area, not having a strategy on how to fix things
+    - began to dig in and map out things, try candidate small refactorings on certain areas, floating larger refactoring projects to get things under control
+      - https://github.com/github/github/pull/6087
+        - especially "permission from the boss": https://github.com/github/github/pull/6087#issuecomment-8670691
+      - https://github.com/github/github/issues/5072
+      - https://github.com/github/github/issues/5362
+      - https://github.com/github/github/pull/5143
+      - https://github.com/github/github/issues/4565
+      - https://github.com/github/github/pull/5077
+    - more links to PRs
+      - then @defunkt had long-range ideas about how organizations, etc., could be reworked (only some of which have landed so far) (link parts of his discussion)
+    - that catalyzed a Big Project -- "Orgs Next" -- a business-level feature that is roadblocked by our permissioning system
+    - we coalesced a team, really two teams -- a front-end user-facing team, and a back-end team working on removing the roadblocks to get there
+    - Capabilities
+    - Abilities
+    - Science
+    - Backscatter
+    - parallel permissioning systems running
+    - repository networks
+    - data quality and cleanup
+    - transitions, throttling
+    - making everything available for enterprise
+    - organization front-end changes without abilities (anti-corruption layers, etc.)
+    - making abilities be the source of truth for reads on teams and orgs
+    - making abilities be the source of truth for repositories
+    - removing science: no longer traversing old permission query paths
+    - eventual removal of update paths for old queries
+    - enterprise systems running transitions, data quality scripts
+- rails3
+  - ongoing (2011 -> now)
+  - backporting strategy; overwhelmed by code changes; long branch
+  - guard-based strategy to backport all version changes to master
+  - aggressive graphing and logging
+  - staying out of the way of enterprise branch points
+  - reworking our script/* directory and configuration to allow toggling rails versions easily
+- smoke -> gitrpc
+  - just completed, 2011 -> now
+  - piecewise replacement of one git layer with another
+  - graph instrumentation, exception tracking, extensive use of backscatter
+  - gradual increase in callers of gitrpc -- 20%, 40%, 50%, 80%, 90%, 95%, 98%, 99%, 99.5%, 99.9%, .... 100%
 
  -> TODO: put the d3-type stuff here.
 
