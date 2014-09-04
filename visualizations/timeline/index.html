@@ -24,7 +24,7 @@ body {
 
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
     width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    height = 800 - margin.top - margin.bottom;
 
 var x = d3.time.scale()
     .range([0, width]);
@@ -74,21 +74,11 @@ d3.json("data.json", function(error, data) {
       .style("text-anchor", "end")
       .text("Time");
 
-  svg.append("g")
-      .attr("class", "y axis")
-      .call(yAxis)
-    .append("text")
-      .attr("class", "label")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .text("Commits")
-
   svg.selectAll(".dot")
       .data(data)
     .enter().append("ellipse")
       .attr("class", "dot")
+      .style("stroke-width", function(d) { return d.comments/10; })
       .attr("rx", function(d) { return (d.end-d.start)/100000000; })
       .attr("ry", function(d) { return d.commits / 10.0; })
       .attr("cx", function(d) { return x(d.start) *0.95; })
