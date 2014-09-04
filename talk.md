@@ -60,21 +60,101 @@
 `http://refactoring.com/catalog/inlineMethod.html`
 
 ---
-   - and an example of a reverse refactoring (inline method)
 
- - why do we refactor?
-   - wankery
-   - to understand the system
-   - to bring behavior under test
-   - to extract code for reuse
-   - to improve some facet of the system (performance, memory use, coupling, cohesion, etc., etc., etc.)
-   - to reuse existing code elsewhere
-   - to make room for a new feature
-   - to prepare to fix a bug
-   - ...
+## why do we refactor?
 
- - optimization
-   - no, I mean, life optimization
+---
+
+### wankery
+
+---
+
+### to understand the system
+
+---
+
+
+### to understand the system
+### to bring behavior under test
+
+---
+
+### to understand the system
+### to bring behavior under test
+### to extract code for reuse
+
+---
+
+### to understand the system
+### to bring behavior under test
+### to extract code for reuse
+### to improve some facet of the system (performance, memory use, coupling, cohesion, etc., etc., etc.)
+
+---
+
+### to understand the system
+### to bring behavior under test
+### to extract code for reuse
+### to improve some facet of the system (performance, memory use, coupling, cohesion, etc., etc., etc.)
+### to reuse existing code elsewhere
+
+---
+
+### to understand the system
+### to bring behavior under test
+### to extract code for reuse
+### to improve some facet of the system (performance, memory use, coupling, cohesion, etc., etc., etc.)
+### to reuse existing code elsewhere
+### to make room for a new feature
+
+---
+
+### to understand the system
+### to bring behavior under test
+### to extract code for reuse
+### to improve some facet of the system (performance, memory use, coupling, cohesion, etc., etc., etc.)
+### to reuse existing code elsewhere
+### to make room for a new feature
+### to prepare to fix a bug
+
+---
+
+### to understand the system
+### to bring behavior under test
+### to extract code for reuse
+### to improve some facet of the system (performance, memory use, coupling, cohesion, etc., etc., etc.)
+### to reuse existing code elsewhere
+### to make room for a new feature
+### to prepare to fix a bug
+### ...
+
+---
+
+### to understand the system
+### to bring behavior under test
+### to extract code for reuse
+### to improve some facet of the system (performance, memory use, coupling, cohesion, etc., etc., etc.)
+### to reuse existing code elsewhere
+### to make room for a new feature
+### to prepare to fix a bug
+## wankery
+
+---
+
+## optimization
+<br/>
+<br/>
+
+---
+
+## optimization
+<br/>
+### no, I mean, life optimization
+
+---
+
+
+
    - if you're refactoring on a system that no one is using, then either
      - it's just wankery
        - maybe with the goal of learning something
