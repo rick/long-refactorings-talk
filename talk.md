@@ -611,7 +611,7 @@
 ---
 
 
-![](images/permission-bug-9.png)
+![](images/permission-bug-10.png)
 
 **November 2012**
 
