@@ -564,21 +564,17 @@ https://www.flickr.com/photos/27271711@N04/3643199789/
 
 ---
 
-  - let's get real
     - I spent about 5 months working on the system and looking for the points of pain -- the places where bugs were prevalent, code quality was low, and the difficulty of working on the system
+
+    # permissions bug issues
+
     - Over the course of working on bugs in a number of places, it became clear that our permissioning system was bit-rotting
       - leaky behavior - still see cached notifications or stars or mentions or, etc., on repositories you no longer had access to
       - dashboards showing weird results, job queue jobs failing, help tickets related to permissions, etc.
       - poor performance on some queries, slowing the system down
       - developers not being able to reliably fix things in this area, not having a strategy on how to fix things
     - began to dig in and map out things, try candidate small refactorings on certain areas, floating larger refactoring projects to get things under control
-      - https://github.com/github/github/pull/6087
-        - especially "permission from the boss": https://github.com/github/github/pull/6087#issuecomment-8670691
-      - https://github.com/github/github/issues/5072
-      - https://github.com/github/github/issues/5362
-      - https://github.com/github/github/pull/5143
-      - https://github.com/github/github/issues/4565
-      - https://github.com/github/github/pull/5077
+
     - more links to PRs
       - then @defunkt had long-range ideas about how organizations, etc., could be reworked (only some of which have landed so far) (link parts of his discussion)
     - that catalyzed a Big Project -- "Orgs Next" -- a business-level feature that is roadblocked by our permissioning system
