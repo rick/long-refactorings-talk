@@ -704,6 +704,22 @@
 
 ---
 
+## How to run two permission systems at the same time
+
+### One system is the source of all truth.
+### Have a migrator that creates the second system's data from the first.
+### The data for the second system is updated by actions on the first system.
+### Start with just a subset of users.
+### Trash the data and re-run the migrator.
+### Eventually never re-run the migrator.
+
+
+---
+
+![](images/caps-transitions.png)
+
+---
+
 ## The project will ebb and flow
 
 <br/>
@@ -752,15 +768,132 @@
 ### Keep your sense of humor.
 ### Rely on your peoples.
 ### Keep close.
-### Take a vacation.  This is a marathon.
-### You actually can leave and do something else.
 ### Work-life balance is important.
+### This is a marathon.
+### Take a vacation.
+### You actually can leave and do something else.
+### It's fine.
 
 ---
 
+## Setbacks
+
+<br/>
+
+### Repository Networks were all jacked up at the model level.
+### &nbsp;
+### &nbsp;
 
 ---
 
+## Setbacks
+
+<br/>
+
+### Repository Networks were all jacked up at the model level.
+### "plan owner" data was all shitty due to old bad job processes.
+### &nbsp;
+
+---
+
+## Setbacks
+
+<br/>
+
+### Repository Networks were all jacked up at the model level.
+### "plan owner" data was all shitty due to old bad job processes.
+### Forking and collaborators were all sorts of stupid.
+
+---
+
+## Setbacks
+
+<br />
+
+### You re-learn that you everything is connected.
+### You end up having to fix way more things than you hoped.
+### And you make some trade-offs and draw boundaries.
+
+---
+
+## Setbacks
+
+<br />
+
+### So we wrote data quality scripts to find problems.
+### We wrote transition scripts to clean up problems.
+### We wrote throttling tools to make massive transitions never hurt production.
+
+---
+
+![](images/replication-lag-throttler.png)
+
+---
+
+## Estimation
+
+### There is no way I have seen to estimate a long refactoring.
+### What you can do is not be a blocker, and continue to negotiate what is the most important thing to fix Right Now.
+
+---
+
+![](images/enterprise.jpg)
+
+## Enterprise
+
+---
+
+## Enterprise
+
+### Installed GitHub instances behind company firewalls.
+### Often 6 months behind github.com code base.
+### Customers can be 300+ days behind last Enterprise release.
+### We have almost zero visibility into installed versions and data quality at a customer's site.
+### There are disabled and enabled github.com features on Enterprise.
+
+---
+
+## Enterprise
+
+### Data transitions for github.com are bundled with migrations for Enterprise upgrades.
+### Database tables and ActiveRecord models persist in github.com code until Enterprise is fully upgraded.
+
+---
+
+![](images/big-ship.jpg)
+
+## Shipping
+
+---
+
+## Shipping
+
+### Made abilities be the "source of truth" for read queries on teams, and orgs.
+### Made abilities be the "source of truth" for repository read queries.
+### Continue writing data to *both* permissions systems.
+### Gradual removal of science experiment code.
+
+---
+
+![](images/last-science.jpg)
+
+---
+
+![](images/last-ship.png)
+
+---
+
+![](images/last-ship-2.png)
+
+---
+
+![](images/deploy-lol.png)
+
+---
+
+![](images/raptor.gif)
+
+---
 
 ## Image credits:
 
@@ -774,23 +907,13 @@ https://www.flickr.com/photos/j3net/480637896/
 https://www.flickr.com/photos/jmabel/4516193497/
 https://www.flickr.com/photos/27271711@N04/3643199789/
 https://www.flickr.com/photos/pixbymaia/9662665997/
+https://www.flickr.com/photos/usnavy/7070501561/
+https://www.flickr.com/photos/loshak/4839254506/
 
 **Note: dat rooster is origin unknown**
 
 ---
 
-    - Backscatter
-    - parallel permissioning systems running
-    - repository networks
-    - data quality and cleanup
-    - transitions, throttling
-    - making everything available for enterprise
-    - organization front-end changes without abilities (anti-corruption layers, etc.)
-    - making abilities be the source of truth for reads on teams and orgs
-    - making abilities be the source of truth for repositories
-    - removing science: no longer traversing old permission query paths
-    - eventual removal of update paths for old queries
-    - enterprise systems running transitions, data quality scripts
 - rails3
   - ongoing (2011 -> now)
   - backporting strategy; overwhelmed by code changes; long branch
@@ -810,12 +933,3 @@ https://www.flickr.com/photos/pixbymaia/9662665997/
  -> commitment to engineering over marketing, e.g.
 
  - need something conclusory...
-
- - abilities talk
-    - talk about transitions, transitions with migrations (also, for enterprise); even using dynamic primary->replica lag time to adjust transition rates
-    - talk about data quality scripts
-    - check skitch history on old laptop's skitch install
-  - do something with data (d3)
-    - also, can we get labels for the different sources of data?
-    - we can do a linkage graph
-    - some sort of stacked graph of contributions, etc.
