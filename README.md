@@ -1,4 +1,8 @@
-long-refactorings-talk
-======================
+## A talk about "Long Refactorings"
 
-a talk about long refactorings
+This is an [mdpress](https://github.com/egonSchiele/mdpress) talk.  To view it locally:
+
+```
+$ bundle install
+$ bundle exec mdpress -r talk.md
+```

@@ -1,5 +1,9 @@
 
 # Long Refactorings
+
+<br/>
+<br/>
+
 ## Rick Bradley
 ### GitHub, Inc.
 
@@ -436,7 +440,7 @@
 
 ---
 
-## getting real 
+## getting real
 
 ---
 
@@ -456,12 +460,6 @@ https://www.flickr.com/photos/j3net/480637896/i
 ---
 
   - let's get real
-    - we refactored the entirety of the GitHub permissioning, teams, and organizations system over 22 months
-      - link to abilities issues list
-      - any d3 stuff we've got
-    - why?
-      - I (and my OGC cohorts -- Kevin Barnes and Yossef Mendelssohn) were hired by @defunkt and @schacon to "do a rescue mission, on GitHub.com"
-      - that might have been tongue-in-cheek, and I'll chalk it up to cocktails and endless sake at Urban Grub & pm, but there's still a lot of truth in a need to work at scale on systems with nontrivial technical debt
       - I spent about 5 months working on the system and looking for the points of pain -- the places where bugs were prevalent, code quality was low, and the difficulty of working on the system
       - Over the course of working on bugs in a number of places, it became clear that our permissioning system was bit-rotting
         - leaky behavior - still see cached notifications or stars or mentions or, etc., on repositories you no longer had access to
