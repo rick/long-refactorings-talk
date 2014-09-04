@@ -895,6 +895,27 @@
 
 ---
 
+## Other long ships
+
+---
+
+![](images/rails3.png)
+
+## Rails 3
+
+<br/>
+
+### Yup.  LOL.
+
+---
+
+![](images/gitrpc.gif)
+
+## GitRPC
+
+---
+
+
 ## Image credits:
 
 https://www.flickr.com/photos/mozul/31304173/
@@ -903,6 +924,11 @@ https://www.flickr.com/photos/nate_marsh/5213604228/
 https://www.flickr.com/photos/steveallen/3324325493/
 https://www.flickr.com/photos/ckrug/162099232/
 https://www.flickr.com/photos/slagheap/156203875/
+
+---
+
+## Image credits:
+
 https://www.flickr.com/photos/j3net/480637896/
 https://www.flickr.com/photos/jmabel/4516193497/
 https://www.flickr.com/photos/27271711@N04/3643199789/
@@ -910,26 +936,11 @@ https://www.flickr.com/photos/pixbymaia/9662665997/
 https://www.flickr.com/photos/usnavy/7070501561/
 https://www.flickr.com/photos/loshak/4839254506/
 
+<br/>
+
 **Note: dat rooster is origin unknown**
 
 ---
+= data-x="1000" data-scale-"2" data-rotate-y="45" data-z="10000"
 
-- rails3
-  - ongoing (2011 -> now)
-  - backporting strategy; overwhelmed by code changes; long branch
-  - guard-based strategy to backport all version changes to master
-  - aggressive graphing and logging
-  - staying out of the way of enterprise branch points
-  - reworking our script/* directory and configuration to allow toggling rails versions easily
-- smoke -> gitrpc
-  - just completed, 2011 -> now
-  - piecewise replacement of one git layer with another
-  - graph instrumentation, exception tracking, extensive use of backscatter
-  - gradual increase in callers of gitrpc -- 20%, 40%, 50%, 80%, 90%, 95%, 98%, 99%, 99.5%, 99.9%, .... 100%
-
- -> TODO: put the d3-type stuff here.
-
- -> something about team dynamics
- -> commitment to engineering over marketing, e.g.
-
- - need something conclusory...
+![](images/riddlocat.png)
