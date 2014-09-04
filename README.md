@@ -4,5 +4,5 @@ This is an [mdpress](https://github.com/egonSchiele/mdpress) talk.  To view it l
 
 ```
 $ bundle install
-$ bundle exec mdpress -r talk.md
+$ bundle exec mdpress --images images -r talk.md
 ```
