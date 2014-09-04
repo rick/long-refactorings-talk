@@ -34,7 +34,7 @@
 
 <br/>
 
-### behavior-preserving changes to the implementation of a system
+### **"behavior-preserving changes to the implementation of a system"**
 
 ---
 
@@ -66,11 +66,36 @@
 
 ---
 
+## **"behavior-preserving changes to the implementation of a system"**
+
+<br/>
+
+### This is really only true for the smallest of refactorings.
+
+<br/>
+<br/>
+
+### In larger-scale refactorings we're typically chaining together a series of behavior-preserving changes, interspersed with behavior changes.
+
+<br/>
+
+### The important things are to always know which is which, and to do them intentionally.
+
+---
+
 ## why do we refactor?
 
 ---
 
-### wankery
+### **wankery**
+
+---
+
+### (primarily)
+
+---
+
+### but also...
 
 ---
 
@@ -142,6 +167,13 @@
 ### to reuse existing code elsewhere
 ### to make room for a new feature
 ### to prepare to fix a bug
+
+<br/>
+
+### (and usually, still, quite a bit of)
+
+<br/>
+
 ## wankery
 
 ---
@@ -179,6 +211,9 @@
 ## refactoring a toy system
 
 ### The value is in building something useful
+
+<br/>
+
 ### Even here, though, we have finite time and resources
 ### So we choose what to work on
 
@@ -199,7 +234,23 @@
 ---
 
 ## refactoring to understand a system
+### &nbsp;
+
+---
+
+## refactoring to understand a system
 ### is useful if it is directed towards implementing a feature or fixing a bug
+---
+
+## refactoring to bring behavior under test
+### &nbsp;
+### &nbsp;
+
+---
+
+## refactoring to bring behavior under test
+### &nbsp;
+### &nbsp;
 
 ---
 
@@ -209,7 +260,19 @@
 ---
 
 ## refactoring to extract code for reuse
+### &nbsp;
+### &nbsp;
+
+---
+
+## refactoring to extract code for reuse
 ### is wasteful, unless we have reached the point where a new feature is ready to use that extraction
+
+---
+
+## refactoring to improve some facet of the system
+### &nbsp;
+### &nbsp;
 
 ---
 
@@ -219,12 +282,24 @@
 ---
 
 ## refactoring to make room for a new feature
+### &nbsp;
+
+---
+
+## refactoring to make room for a new feature
 ### is great, presuming you're implementing that feature right now
 
 ---
 
 ## refactoring to prepare to fix a bug
+### &nbsp;
+
+---
+
+## refactoring to prepare to fix a bug
 ### also great, if you're fixing the bug right now
+
+---
 
 ---
 
@@ -299,8 +374,14 @@
 
 ## We eventually encounter refactorings that we know are projects
 
+<br/>
+
 ### These refactorings are non-trivial and perhaps not even possible.
 ### Even the process of estimation is difficult.
+
+---
+
+![](images/road-block.jpg)
 
 <br/>
 
@@ -334,6 +415,10 @@
 
 ## There are enough risks that success is unlikely
 
+<br/>
+
+### &nbsp;
+### &nbsp;
 ---
 
 ## There are enough risks that success is unlikely
@@ -341,6 +426,7 @@
 <br/>
 
 ### So, aim to minimize costs.
+### &nbsp;
 
 ---
 
@@ -349,6 +435,8 @@
 <br/>
 
 ### Aim to never be a roadblock.
+### &nbsp;
+
 ---
 
 ## There are enough risks that success is unlikely
@@ -356,6 +444,7 @@
 <br/>
 
 ### Avoid building the Second System™ -- the promised land of endless biscuits and gravy.
+
 ---
 
 ## There are enough risks that success is unlikely
@@ -363,6 +452,7 @@
 <br/>
 
 ### Integrate constantly.  Long-running branches are kryptonite.
+### &nbsp;
 ---
 
 ## There are enough risks that success is unlikely
@@ -370,6 +460,7 @@
 <br/>
 
 ### Don't go in for Flag Day.
+### &nbsp;
 ---
 
 ## There are enough risks that success is unlikely
@@ -384,10 +475,11 @@
 <br/>
 
 ### Be like water.
+### &nbsp;
 
 ---
 
-![](images/miner.jpg)
+![](images/be-like-water.jpg)
 
 ---
 
@@ -400,6 +492,8 @@
 <br/>
 
 ### Spec out possible alternate architectures as proofs of concept.
+### &nbsp;
+
 ---
 
 ![](images/miner.jpg)
@@ -430,9 +524,13 @@
 
 ![](images/mikado.jpg)
 
-### use techniques like _The Mikado Method_ to even explore the possible refactorings
+<br/>
 
-TODO - more Mikado here?
+### use techniques like those from _The Mikado Method_ to even explore the possible refactorings
+
+---
+
+![](images/mikado-graph.png)
 
 ---
 
@@ -453,7 +551,9 @@ https://www.flickr.com/photos/steveallen/3324325493/
 https://www.flickr.com/photos/ckrug/162099232/
 https://www.flickr.com/photos/peterras/6637828115/
 https://www.flickr.com/photos/slagheap/156203875/
-https://www.flickr.com/photos/j3net/480637896/i
+https://www.flickr.com/photos/j3net/480637896/
+https://www.flickr.com/photos/jmabel/4516193497/
+https://www.flickr.com/photos/27271711@N04/3643199789/
 
 **Note: dat rooster is origin unknown**
 
