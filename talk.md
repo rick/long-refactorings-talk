@@ -1,6 +1,7 @@
 
 # Long Refactorings
 ## Rick Bradley
+### GitHub, Inc.
 
 ---
 
@@ -435,6 +436,9 @@
 
 ---
 
+## getting real 
+
+---
 
 ## Image credits:
 
@@ -447,7 +451,7 @@ https://www.flickr.com/photos/peterras/6637828115/
 https://www.flickr.com/photos/slagheap/156203875/
 https://www.flickr.com/photos/j3net/480637896/i
 
-Note: dat rooster is origin unknown
+**Note: dat rooster is origin unknown**
 
 ---
 
