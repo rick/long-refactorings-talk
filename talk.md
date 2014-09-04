@@ -283,6 +283,8 @@
 
 ---
 
+---
+
 ![](images/dump-truck-large.jpg)
 
 ---
@@ -321,6 +323,119 @@
 
 ---
 
+## Tackling these ugly jobs is what we're here to talk about.
+
+---
+
+![](images/mechanic.jpg)
+
+## So how do we tackle these huge refactorings?
+
+---
+
+## There are enough risks that success is unlikely
+
+---
+
+## There are enough risks that success is unlikely
+
+<br/>
+
+### So, aim to minimize costs.
+
+---
+
+## There are enough risks that success is unlikely
+
+<br/>
+
+### Aim to never be a roadblock.
+---
+
+## There are enough risks that success is unlikely
+
+<br/>
+
+### Avoid building the Second System™ -- the promised land of endless biscuits and gravy.
+---
+
+## There are enough risks that success is unlikely
+
+<br/>
+
+### Integrate constantly.  Long-running branches are kryptonite.
+---
+
+## There are enough risks that success is unlikely
+
+<br/>
+
+### Don't go in for Flag Day.
+---
+
+## There are enough risks that success is unlikely
+
+<br/>
+
+### When the project "lands", it's quietly been in use for weeks or months already.
+---
+
+## There are enough risks that success is unlikely
+
+<br/>
+
+### Be like water.
+
+---
+
+![](images/miner.jpg)
+
+---
+
+![](images/miner.jpg)
+
+<br/>
+
+## Start with exploration
+
+<br/>
+
+### Spec out possible alternate architectures as proofs of concept.
+---
+
+![](images/miner.jpg)
+
+<br/>
+
+
+## Start with exploration
+
+<br/>
+
+### Various people in ones and twos take stabs at feasibility over the course of months or years.
+
+---
+
+![](images/miner.jpg)
+
+<br/>
+
+
+## Start with exploration
+
+<br/>
+
+### Do throw-away experimental refactorings of a smaller scope just to see if a large refactoring might be possible.
+
+---
+
+![](images/mikado.jpg)
+
+### use techniques like _The Mikado Method_ to even explore the possible refactorings
+
+---
+
+
 ## Image credits:
 
 https://www.flickr.com/photos/mozul/31304173/
@@ -329,31 +444,12 @@ https://www.flickr.com/photos/nate_marsh/5213604228/
 https://www.flickr.com/photos/steveallen/3324325493/
 https://www.flickr.com/photos/ckrug/162099232/
 https://www.flickr.com/photos/peterras/6637828115/
+https://www.flickr.com/photos/slagheap/156203875/
+https://www.flickr.com/photos/j3net/480637896/i
 
 Note: dat rooster is origin unknown
 
 ---
-
-     - then we begin to escalate into refactorings that we know are projects:
-       - we are only considering them because really important features are being roadblocked
-         - or there are bugs and quality issues in this part of the system, which never seem to be resolved piecemeal
-         - or everyone who tries to implement features in this area backs off, steps back muttering, becomes angry and turns to drink
-       - we find ourselves using things like _The Mikado Method_ to even explore the possible refactorings:
-       - we do throw-away experimental refactorings of a smaller scope just to see if a large refactoring might be possible here
-       - we spec out possible alternate architectures as proofs of concept
-       - various people in ones and twos take these stabs at feasibility over the course of months or years
-
-    - those hellacious refactorings are what this talk is about
-
-  - how can we succeed at these sort of major refactorings?
-    - there are so many risks that it's actually unlikely you'll succeed
-    - so aim to minimize costs
-    - aim to never be a roadblock
-    - aim to never build a Second System, the promised land of endless biscuits and gravy
-    - aim to integrate constantly
-    - avoid Flag Day
-    - be like water (flow with whatever is happening, making incremental improvements all the way)
-    - when the refactoring "lands", there should be zero risk, because it's already been in place for months
 
   - let's get real
     - we refactored the entirety of the GitHub permissioning, teams, and organizations system over 22 months
