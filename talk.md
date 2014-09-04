@@ -11,11 +11,11 @@
 ---
 
 ## long refactorings
+<br/>
 
 ---
 
-## long refactorings
-## are simply refactorings
+## long refactorings are simply refactorings
 ### only, (IN HINDSIGHT) they end up taking a lot longer than most refactorings
 
 ---
@@ -24,9 +24,42 @@
 ## What *is* "refactoring"?
 
 ---
-   - low-level, behavior-preserving changes to the implementation of a system
-   - show the martin fowler book
-   - example of a simple refactoring (extract method)
+
+## Refactoring...
+
+<br/>
+
+### behavior-preserving changes to the implementation of a system
+
+---
+
+![](images/refactoringBook.jpg)
+
+---
+
+![](images/extract-method.png)
+
+<br/>
+
+<br/>
+
+<br/>
+
+`http://refactoring.com/catalog/extractMethod.html`
+
+---
+
+![](images/inline-method.png)
+
+<br/>
+
+<br/>
+
+<br/>
+
+`http://refactoring.com/catalog/inlineMethod.html`
+
+---
    - and an example of a reverse refactoring (inline method)
 
  - why do we refactor?
