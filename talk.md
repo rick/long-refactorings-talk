@@ -283,29 +283,58 @@
 
 ---
 
+![](images/dump-truck-large.jpg)
+
+---
+
+![](images/dump-truck-med.jpg)
+
+## We eventually encounter refactorings that we know are projects
+
+---
+
+
+![](images/dump-truck-med.jpg)
+
+## We eventually encounter refactorings that we know are projects
+
+### These refactorings are non-trivial and perhaps not even possible.
+### Even the process of estimation is difficult.
+
+<br/>
+
+### We only consider them because they are roadblocks to important features, or there are real quality problems in this part of the system, and piecemeal attempts at bugfixing fail to eliminate problems.
+
+---
+
+### Developers who go into these areas come back angry and muttering, they turn to the solace of drink.
+
+<br/>
+
+<center>
+![](images/dat-rooster.jpg)
+</center>
+
+<br/>
+
+## Good people are reduced to bad things.
+
+---
+
 ## Image credits:
 
 https://www.flickr.com/photos/mozul/31304173/
 https://www.flickr.com/photos/uspn/4894253589/
 https://www.flickr.com/photos/nate_marsh/5213604228/
 https://www.flickr.com/photos/steveallen/3324325493/
+https://www.flickr.com/photos/ckrug/162099232/
+https://www.flickr.com/photos/peterras/6637828115/
+
+Note: dat rooster is origin unknown
 
 ---
 
-     - a lot of refactorings are a little larger, suitable for a pair of programmers sitting down one afternoon
-       - we can typically estimate them, or do without estimation altogether
-       - we can knock them out pretty quickly
-       - we can use simple tools and processes:
-         - cut a feature branch
-         - supplement tests, refactor to tests
-         - do pair programming
-         - start with a pull request for the main feature or bugfix
-         - kick off a pull request for the refactoring, cc-ing between the PRs; this lands, and we go back to the main PR
-         - we begin to use techniques like those found in Michael Feather's _Working Effectively with Legacy Code_
-
      - then we begin to escalate into refactorings that we know are projects:
-       - even the process of estimation can be difficult
-       - we know that these refactorings are non-trivial, and it's not even clear sometimes whether
        - we are only considering them because really important features are being roadblocked
          - or there are bugs and quality issues in this part of the system, which never seem to be resolved piecemeal
          - or everyone who tries to implement features in this area backs off, steps back muttering, becomes angry and turns to drink
