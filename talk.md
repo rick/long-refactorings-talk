@@ -651,10 +651,58 @@
 
 ---
 
+![](images/capabilities.png)
+
+**November 2012**
 
 ---
 
+![](images/capabilities-1.png)
+
+### Capabilities lived as a new permissions system, side-by-side with existing permissions until August, 2013
+
 ---
+
+![](images/recaps.png)
+
+### Until Abilities came onto the scene.
+
+### Extensive performance testing led us to remodel capabilities so that granting operations were more performant
+
+---
+
+## How did we know?
+
+---
+
+![](images/scientist.jpg)
+
+---
+
+![](images/dat-science.png)
+
+---
+
+![](images/dat-science-perf.png)
+
+### We built tools to let us (and anyone) run two code paths side-by-side.
+### Then performance data is published by instrumentation into our graphite cluster.
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
 
 ---
 
@@ -669,6 +717,7 @@ https://www.flickr.com/photos/slagheap/156203875/
 https://www.flickr.com/photos/j3net/480637896/
 https://www.flickr.com/photos/jmabel/4516193497/
 https://www.flickr.com/photos/27271711@N04/3643199789/
+https://www.flickr.com/photos/pixbymaia/9662665997/
 
 **Note: dat rooster is origin unknown**
 
