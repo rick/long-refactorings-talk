@@ -625,8 +625,38 @@
 
 ---
 
+![](images/abilities-team.png)
+
+![](images/orgs-team.png)
+
+---
+
+## The Abilities project:
+
+<br/>
+
+### 4 primary developers
+### 795 Pull Requests and Issues from November 2012 until August 2014
+
+<br/>
+
+### Multiple iterations of complete new permissioning systems
+### Tight collaboration with ongoing Organization improvements
+
+---
+
+## (let's look at those issues)
+
+---
+
+---
 
 
+---
+
+---
+
+---
 
 ## Image credits:
 
