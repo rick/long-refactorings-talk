@@ -532,11 +532,16 @@
 
 ![](images/mikado-graph.png)
 
+ 1. Start with a goal
+ 2. Do the first small refactoring along the way
+ 3. See what breaks -- write down a graph node
+ 4. Repeat until no more dependencies
+
 ---
 
 ## getting real
 
---
+---
 
 ## "abilities"
 
