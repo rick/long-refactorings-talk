@@ -690,21 +690,77 @@
 
 ---
 
+![](images/adminable-by-science.png)
+
+---
+
+## Don't Roadblock
+
+<br/>
+
+### Long-running branches are kryptonite.
+### We can land short-lived branches to "dark ship" new code.
+### With science and instrumentation tools we can gather real production measurements in a controlled fashion.
+
+---
+
+## The project will ebb and flow
+
+<br/>
+
+### Always have enough side project work available that you can stay fresh and not get bogged down.
+### People will come and go (and often return) on a truly long refactoring.
+### You will be at an impasse many times.
+### Rely on your team, and allow yourself to experiment with crazy things.
+### Your creativity is an asset.
+
+
+---
+
+![](images/backscatter.png)
+
+### Sometimes it's just hard to figure out if the code you are changing is even being used. Try to be 100% safe.
+
+---
+
+
+![](images/backscatter-1.png)
+
+---
+
+![](images/backscatter-2.png)
+
+### Just a glorified wrapper around ruby's `caller` method.
+
+---
+
+![](images/nil-can.png)
+
+### ... which can be put to holy or horrible uses.
+---
+
+![](images/horrible-people.png)
+
+### Because, really, we're all such horrible people.
+
+---
+
+## Staying alive
+
+<br/>
+
+### Keep your sense of humor.
+### Rely on your peoples.
+### Keep close.
+### Take a vacation.  This is a marathon.
+### You actually can leave and do something else.
+### Work-life balance is important.
 
 ---
 
 
 ---
 
-
----
-
-
----
-
-
-
----
 
 ## Image credits:
 
@@ -723,24 +779,6 @@ https://www.flickr.com/photos/pixbymaia/9662665997/
 
 ---
 
-    - I spent about 5 months working on the system and looking for the points of pain -- the places where bugs were prevalent, code quality was low, and the difficulty of working on the system
-
-    # permissions bug issues
-
-    - Over the course of working on bugs in a number of places, it became clear that our permissioning system was bit-rotting
-      - leaky behavior - still see cached notifications or stars or mentions or, etc., on repositories you no longer had access to
-      - dashboards showing weird results, job queue jobs failing, help tickets related to permissions, etc.
-      - poor performance on some queries, slowing the system down
-      - developers not being able to reliably fix things in this area, not having a strategy on how to fix things
-    - began to dig in and map out things, try candidate small refactorings on certain areas, floating larger refactoring projects to get things under control
-
-    - more links to PRs
-      - then defunkt had long-range ideas about how organizations, etc., could be reworked (only some of which have landed so far) (link parts of his discussion)
-    - that catalyzed a Big Project -- "Orgs Next" -- a business-level feature that is roadblocked by our permissioning system
-    - we coalesced a team, really two teams -- a front-end user-facing team, and a back-end team working on removing the roadblocks to get there
-    - Capabilities
-    - Abilities
-    - Science
     - Backscatter
     - parallel permissioning systems running
     - repository networks
