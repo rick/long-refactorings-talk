@@ -547,6 +547,49 @@
 
 ---
 
+![](images/permission-bug-0.png)
+
+**June 2012**
+
+---
+
+![](images/permission-bug-1.png)
+
+**July 2012**
+
+---
+
+![](images/permission-bug-2.png)
+
+**July 2012**
+
+---
+
+![](images/permission-bug-3.png)
+
+**July 2012**
+
+
+---
+
+![](images/permission-bug-4.png)
+
+**July 2012**
+
+---
+
+
+![](images/permission-bug-5.png)
+
+**August 2012**
+
+---
+
+---
+
+---
+
+
 ## Image credits:
 
 https://www.flickr.com/photos/mozul/31304173/
