@@ -154,7 +154,7 @@
 
 ## optimization
 <br/>
-### no, I mean, life optimization
+### no, I mean, like, life optimization
 
 ---
 
@@ -512,3 +512,12 @@ https://www.flickr.com/photos/j3net/480637896/i
  -> commitment to engineering over marketing, e.g.
 
  - need something conclusory...
+
+ - abilities talk
+    - talk about transitions, transitions with migrations (also, for enterprise); even using dynamic primary->replica lag time to adjust transition rates
+    - talk about data quality scripts
+    - check skitch history on old laptop's skitch install
+  - do something with data (d3)
+    - also, can we get labels for the different sources of data?
+    - we can do a linkage graph
+    - some sort of stacked graph of contributions, etc.
