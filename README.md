@@ -1,5 +1,11 @@
 ## A talk about "Long Refactorings"
 
+You can view it online at:  http://rick.github.io/long-refactorings-talk/
+
+(click right-arrow and left-arrow to navigate through the slides)
+
+---
+
 This is an [mdpress](https://github.com/egonSchiele/mdpress) talk.  To view it locally:
 
 ```
