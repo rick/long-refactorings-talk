@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link href="css/reset.css" rel="stylesheet" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="css/favicon.png" />
+    <link rel="apple-touch-icon" href="css/apple-touch-icon.png" />
+    <!-- Code Prettifier: -->
+<link href="css/highlight.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    <link href="css/style.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,300,400,800' rel='stylesheet' type='text/css'>    
+
+
+  </head>
+
+  <body>
+  <div class="fallback-message">
+  <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+  <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+  </div>
+    <div id="impress">
+    <div class='step' >
+    
+<h1>Long Refactorings</h1>
+
+<p><br/>
+<br/></p>
+
+<h2>Rick Bradley</h2>
+
+<h3>GitHub, Inc.</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/rick.png" alt=""></p>
+
+<h3>github.com/rick</h3>
+</div>
+      <div class='step' >
+    
+<h2>long refactorings</h2>
+
+<p><br/></p>
+</div>
+      <div class='step' >
+    
+<h2>long refactorings are simply refactorings</h2>
+
+<h3>only, (IN HINDSIGHT) they end up taking a lot longer than most refactorings</h3>
+</div>
+      <div class='step' >
+    
+<h3>Stepping back for a second...</h3>
+
+<h2>What <em>is</em> &quot;refactoring&quot;?</h2>
+</div>
+      <div class='step' >
+    
+<h2>Refactoring...</h2>
+
+<p><br/></p>
+
+<h3><strong>&quot;behavior-preserving changes to the implementation of a system&quot;</strong></h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/refactoringBook.jpg" alt=""></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/extract-method.png" alt=""></p>
+
+<p><br/></p>
+
+<p><br/></p>
+
+<p><br/></p>
+
+<p><code class='inline prettyprint'>http://refactoring.com/catalog/extractMethod.html</code></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/inline-method.png" alt=""></p>
+
+<p><br/></p>
+
+<p><br/></p>
+
+<p><br/></p>
+
+<p><code class='inline prettyprint'>http://refactoring.com/catalog/inlineMethod.html</code></p>
+</div>
+      <div class='step' >
+    
+<h2><strong>&quot;behavior-preserving changes to the implementation of a system&quot;</strong></h2>
+
+<p><br/></p>
+
+<h3>This is really only true for the smallest of refactorings.</h3>
+
+<p><br/>
+<br/></p>
+
+<h3>In larger-scale refactorings we&#39;re typically chaining together a series of behavior-preserving changes, interspersed with behavior changes.</h3>
+
+<p><br/></p>
+
+<h3>The important things are to always know which is which, and to do them intentionally.</h3>
+</div>
+      <div class='step' >
+    
+<h2>why do we refactor?</h2>
+</div>
+      <div class='step' >
+    
+<h3><strong>wankery</strong></h3>
+</div>
+      <div class='step' >
+    
+<h3>(primarily)</h3>
+</div>
+      <div class='step' >
+    
+<h3>but also...</h3>
+</div>
+      <div class='step' >
+    
+<h3>to understand the system</h3>
+</div>
+      <div class='step' >
+    
+<h3>to understand the system</h3>
+
+<h3>to bring behavior under test</h3>
+</div>
+      <div class='step' >
+    
+<h3>to understand the system</h3>
+
+<h3>to bring behavior under test</h3>
+
+<h3>to extract code for reuse</h3>
+</div>
+      <div class='step' >
+    
+<h3>to understand the system</h3>
+
+<h3>to bring behavior under test</h3>
+
+<h3>to extract code for reuse</h3>
+
+<h3>to improve some facet of the system (performance, memory use, coupling, cohesion, etc., etc., etc.)</h3>
+</div>
+      <div class='step' >
+    
+<h3>to understand the system</h3>
+
+<h3>to bring behavior under test</h3>
+
+<h3>to extract code for reuse</h3>
+
+<h3>to improve some facet of the system (performance, memory use, coupling, cohesion, etc., etc., etc.)</h3>
+
+<h3>to reuse existing code elsewhere</h3>
+</div>
+      <div class='step' >
+    
+<h3>to understand the system</h3>
+
+<h3>to bring behavior under test</h3>
+
+<h3>to extract code for reuse</h3>
+
+<h3>to improve some facet of the system (performance, memory use, coupling, cohesion, etc., etc., etc.)</h3>
+
+<h3>to reuse existing code elsewhere</h3>
+
+<h3>to make room for a new feature</h3>
+</div>
+      <div class='step' >
+    
+<h3>to understand the system</h3>
+
+<h3>to bring behavior under test</h3>
+
+<h3>to extract code for reuse</h3>
+
+<h3>to improve some facet of the system (performance, memory use, coupling, cohesion, etc., etc., etc.)</h3>
+
+<h3>to reuse existing code elsewhere</h3>
+
+<h3>to make room for a new feature</h3>
+
+<h3>to prepare to fix a bug</h3>
+</div>
+      <div class='step' >
+    
+<h3>to understand the system</h3>
+
+<h3>to bring behavior under test</h3>
+
+<h3>to extract code for reuse</h3>
+
+<h3>to improve some facet of the system (performance, memory use, coupling, cohesion, etc., etc., etc.)</h3>
+
+<h3>to reuse existing code elsewhere</h3>
+
+<h3>to make room for a new feature</h3>
+
+<h3>to prepare to fix a bug</h3>
+
+<h3>...</h3>
+</div>
+      <div class='step' >
+    
+<h3>to understand the system</h3>
+
+<h3>to bring behavior under test</h3>
+
+<h3>to extract code for reuse</h3>
+
+<h3>to improve some facet of the system (performance, memory use, coupling, cohesion, etc., etc., etc.)</h3>
+
+<h3>to reuse existing code elsewhere</h3>
+
+<h3>to make room for a new feature</h3>
+
+<h3>to prepare to fix a bug</h3>
+
+<p><br/></p>
+
+<h3>(and usually, still, quite a bit of)</h3>
+
+<p><br/></p>
+
+<h2>wankery</h2>
+</div>
+      <div class='step' >
+    
+<h2>optimization</h2>
+
+<p><br/>
+<br/></p>
+</div>
+      <div class='step' >
+    
+<h2>optimization</h2>
+
+<p><br/></p>
+
+<h3>no, I mean, like, life optimization</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/small-car.jpg" alt=""></p>
+
+<h2>refactoring a toy system</h2>
+</div>
+      <div class='step' >
+    
+<p><img src="images/small-car.jpg" alt=""></p>
+
+<h2>refactoring a toy system</h2>
+
+<h3>it could be for learning purposes</h3>
+
+<h3>or perhaps the hope is that some day it will grow up to be a big system</h3>
+
+<h4>one that someone has a use for</h4>
+</div>
+      <div class='step' >
+    
+<p><img src="images/small-car.jpg" alt=""></p>
+
+<h2>refactoring a toy system</h2>
+
+<h3>The value is in building something useful</h3>
+
+<p><br/></p>
+
+<h3>Even here, though, we have finite time and resources</h3>
+
+<h3>So we choose what to work on</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/india-bus.jpg" alt=""></p>
+
+<h2>refactoring a system that people are actively using</h2>
+</div>
+      <div class='step' >
+    
+<p><img src="images/india-bus.jpg" alt=""></p>
+
+<h3>Again, limited time and resources,</h3>
+
+<h3>so we must make choices about what to work on,</h3>
+
+<h3>because the time spent on one thing cannot be spent on another.</h3>
+</div>
+      <div class='step' >
+    
+<h2>refactoring to understand a system</h2>
+
+<h3>&nbsp;</h3>
+</div>
+      <div class='step' >
+    
+<h2>refactoring to understand a system</h2>
+
+<h3>is useful if it is directed towards implementing a feature or fixing a bug</h3>
+</div>
+      <div class='step' >
+    
+<h2>refactoring to bring behavior under test</h2>
+
+<h3>&nbsp;</h3>
+
+<h3>&nbsp;</h3>
+</div>
+      <div class='step' >
+    
+<h2>refactoring to bring behavior under test</h2>
+
+<h3>&nbsp;</h3>
+
+<h3>&nbsp;</h3>
+</div>
+      <div class='step' >
+    
+<h2>refactoring to bring behavior under test</h2>
+
+<h3>is wasteful, unless it&#39;s being immediately driven by fixing a bug or implementing a feature</h3>
+</div>
+      <div class='step' >
+    
+<h2>refactoring to extract code for reuse</h2>
+
+<h3>&nbsp;</h3>
+
+<h3>&nbsp;</h3>
+</div>
+      <div class='step' >
+    
+<h2>refactoring to extract code for reuse</h2>
+
+<h3>is wasteful, unless we have reached the point where a new feature is ready to use that extraction</h3>
+</div>
+      <div class='step' >
+    
+<h2>refactoring to improve some facet of the system</h2>
+
+<h3>&nbsp;</h3>
+
+<h3>&nbsp;</h3>
+</div>
+      <div class='step' >
+    
+<h2>refactoring to improve some facet of the system</h2>
+
+<h3>is generally a good reason to refactor, if this is the most important thing you could be working on right now</h3>
+</div>
+      <div class='step' >
+    
+<h2>refactoring to make room for a new feature</h2>
+
+<h3>&nbsp;</h3>
+</div>
+      <div class='step' >
+    
+<h2>refactoring to make room for a new feature</h2>
+
+<h3>is great, presuming you&#39;re implementing that feature right now</h3>
+</div>
+      <div class='step' >
+    
+<h2>refactoring to prepare to fix a bug</h2>
+
+<h3>&nbsp;</h3>
+</div>
+      <div class='step' >
+    
+<h2>refactoring to prepare to fix a bug</h2>
+
+<h3>also great, if you&#39;re fixing the bug right now</h3>
+</div>
+      <div class='step' >
+    </div>
+      <div class='step' >
+    
+<h2>optimization</h2>
+
+<h3>part deux</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/matchbox-car.jpg" alt=""></p>
+
+<h2>most refactorings are small or trivial</h2>
+
+<p><br/></p>
+
+<h3>There&#39;s really no estimation involved:</h3>
+
+<h3>look at the code, start making the changes.</h3>
+
+<p><br/></p>
+
+<h3>We&#39;re using techniques in Martin Fowler&#39;s <em>Refactoring</em> book.</h3>
+
+<p><br/></p>
+
+<h3>The refactorings are a commit or few,</h3>
+
+<h3>inside the boundary of a larger pull request,</h3>
+
+<h3>dedicated to a feature or a bugfix.</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/tonka-truck.jpg" alt=""></p>
+
+<h2>many refactorings are a bit larger</h2>
+
+<p><br /></p>
+
+<h3>Suitable for a pair of programmers working on an afternoon,</h3>
+
+<h3>we can estimate them fairly accurately or do without estimation.</h3>
+
+<p><br /></p>
+
+<h3>We can use simple tools and processes, like feature branches, pair programming, a second or third Pull Request.</h3>
+
+<p><br /></p>
+
+<h3>We start to use more advanced techniques.</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/working-effectively.jpg" alt=""></p>
+
+<h2>We start to draw on these techniques</h2>
+
+<p><br/></p>
+
+<h3>characterization testing, refactoring to tests, sensing variables, etc.</h3>
+</div>
+      <div class='step' >
+    </div>
+      <div class='step' >
+    
+<p><img src="images/dump-truck-large.jpg" alt=""></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/dump-truck-med.jpg" alt=""></p>
+
+<h2>We eventually encounter refactorings that we know are projects</h2>
+</div>
+      <div class='step' >
+    
+<p><img src="images/dump-truck-med.jpg" alt=""></p>
+
+<h2>We eventually encounter refactorings that we know are projects</h2>
+
+<p><br/></p>
+
+<h3>These refactorings are non-trivial and perhaps not even possible.</h3>
+
+<h3>Even the process of estimation is difficult.</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/road-block.jpg" alt=""></p>
+
+<p><br/></p>
+
+<h3>We only consider them because they are roadblocks to important features, or there are real quality problems in this part of the system, and piecemeal attempts at bugfixing fail to eliminate problems.</h3>
+</div>
+      <div class='step' >
+    
+<h3>Developers who go into these areas come back angry and muttering, they turn to the solace of drink.</h3>
+
+<p><br/></p>
+
+<p><center>
+<img src="images/dat-rooster.jpg" alt="">
+</center></p>
+
+<p><br/></p>
+
+<h2>Good people are reduced to bad things.</h2>
+</div>
+      <div class='step' >
+    
+<h2>Tackling these ugly jobs is what we&#39;re here to talk about.</h2>
+</div>
+      <div class='step' >
+    
+<p><img src="images/mechanic.jpg" alt=""></p>
+
+<h2>So how do we tackle these huge refactorings?</h2>
+</div>
+      <div class='step' >
+    
+<h2>There are enough risks that success is unlikely</h2>
+
+<p><br/></p>
+
+<h3>&nbsp;</h3>
+
+<h3>&nbsp;</h3>
+</div>
+      <div class='step' >
+    
+<h2>There are enough risks that success is unlikely</h2>
+
+<p><br/></p>
+
+<h3>So, aim to minimize costs.</h3>
+
+<h3>&nbsp;</h3>
+</div>
+      <div class='step' >
+    
+<h2>There are enough risks that success is unlikely</h2>
+
+<p><br/></p>
+
+<h3>Aim to never be a roadblock.</h3>
+
+<h3>&nbsp;</h3>
+</div>
+      <div class='step' >
+    
+<h2>There are enough risks that success is unlikely</h2>
+
+<p><br/></p>
+
+<h3>Avoid building the Second System™ -- the promised land of endless biscuits and gravy.</h3>
+</div>
+      <div class='step' >
+    
+<h2>There are enough risks that success is unlikely</h2>
+
+<p><br/></p>
+
+<h3>Integrate constantly.  Long-running branches are kryptonite.</h3>
+
+<h3>&nbsp;</h3>
+</div>
+      <div class='step' >
+    
+<h2>There are enough risks that success is unlikely</h2>
+
+<p><br/></p>
+
+<h3>Don&#39;t go in for Flag Day.</h3>
+
+<h3>&nbsp;</h3>
+</div>
+      <div class='step' >
+    
+<h2>There are enough risks that success is unlikely</h2>
+
+<p><br/></p>
+
+<h3>When the project &quot;lands&quot;, it&#39;s quietly been in use for weeks or months already.</h3>
+</div>
+      <div class='step' >
+    
+<h2>There are enough risks that success is unlikely</h2>
+
+<p><br/></p>
+
+<h3>Be like water.</h3>
+
+<h3>&nbsp;</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/be-like-water.jpg" alt=""></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/miner.jpg" alt=""></p>
+
+<p><br/></p>
+
+<h2>Start with exploration</h2>
+
+<p><br/></p>
+
+<h3>Spec out possible alternate architectures as proofs of concept.</h3>
+
+<h3>&nbsp;</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/miner.jpg" alt=""></p>
+
+<p><br/></p>
+
+<h2>Start with exploration</h2>
+
+<p><br/></p>
+
+<h3>Various people in ones and twos take stabs at feasibility over the course of months or years.</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/miner.jpg" alt=""></p>
+
+<p><br/></p>
+
+<h2>Start with exploration</h2>
+
+<p><br/></p>
+
+<h3>Do throw-away experimental refactorings of a smaller scope just to see if a large refactoring might be possible.</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/mikado.jpg" alt=""></p>
+
+<p><br/></p>
+
+<h3>use techniques like those from <em>The Mikado Method</em> to even explore the possible refactorings</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/mikado-graph.png" alt=""></p>
+
+<ol>
+<li>Start with a goal</li>
+<li>Do the first small refactoring along the way</li>
+<li>See what breaks -- write down a graph node</li>
+<li>Repeat until no more dependencies</li>
+</ol>
+</div>
+      <div class='step' >
+    
+<h2>getting real</h2>
+</div>
+      <div class='step' >
+    
+<h2>&quot;abilities&quot;</h2>
+</div>
+      <div class='step' >
+    
+<p><img src="images/permission-bug-0.png" alt=""></p>
+
+<p><strong>June 2012</strong></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/permission-bug-1.png" alt=""></p>
+
+<p><strong>July 2012</strong></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/permission-bug-2.png" alt=""></p>
+
+<p><strong>July 2012</strong></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/permission-bug-3.png" alt=""></p>
+
+<p><strong>July 2012</strong></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/permission-bug-4.png" alt=""></p>
+
+<p><strong>July 2012</strong></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/permission-bug-5.png" alt=""></p>
+
+<p><strong>August 2012</strong></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/permission-bug-6.png" alt=""></p>
+
+<p><strong>September 2012</strong></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/permission-bug-7.png" alt=""></p>
+
+<p><strong>September 2012</strong></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/permission-bug-8.png" alt=""></p>
+
+<p><strong>September 2012</strong></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/permission-bug-9.png" alt=""></p>
+
+<p><strong>September 2012</strong></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/permission-bug-10.png" alt=""></p>
+
+<p><strong>November 2012</strong></p>
+</div>
+      <div class='step' >
+    
+<h2>A Long Refactoring Kicks Off</h2>
+
+<h3>Ongoing quality problems in an important part of the system</h3>
+
+<h3>Repeated bugfixing did not improve quality significantly</h3>
+
+<h3>High level feature changes roadblocked by this core subsystem</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/abilities-team.png" alt=""></p>
+
+<p><img src="images/orgs-team.png" alt=""></p>
+</div>
+      <div class='step' >
+    
+<h2>The Abilities project:</h2>
+
+<p><br/></p>
+
+<h3>4 primary developers</h3>
+
+<h3>795 Pull Requests and Issues from November 2012 until August 2014</h3>
+
+<p><br/></p>
+
+<h3>Multiple iterations of complete new permissioning systems</h3>
+
+<h3>Tight collaboration with ongoing Organization improvements</h3>
+</div>
+      <div class='step' >
+    
+<h2>(let&#39;s look at those issues)</h2>
+</div>
+      <div class='step' >
+    </div>
+      <div class='step' >
+    
+<p><img src="images/capabilities.png" alt=""></p>
+
+<p><strong>November 2012</strong></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/capabilities-1.png" alt=""></p>
+
+<h3>Capabilities lived as a new permissions system, side-by-side with existing permissions until August, 2013</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/recaps.png" alt=""></p>
+
+<h3>Until Abilities came onto the scene.</h3>
+
+<h3>Extensive performance testing led us to remodel capabilities so that granting operations were more performant</h3>
+</div>
+      <div class='step' >
+    
+<h2>How did we know?</h2>
+</div>
+      <div class='step' >
+    
+<p><img src="images/scientist.jpg" alt=""></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/dat-science.png" alt=""></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/dat-science-perf.png" alt=""></p>
+
+<h3>We built tools to let us (and anyone) run two code paths side-by-side.</h3>
+
+<h3>Then performance data is published by instrumentation into our graphite cluster.</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/adminable-by-science.png" alt=""></p>
+</div>
+      <div class='step' >
+    
+<h2>Don&#39;t Roadblock</h2>
+
+<p><br/></p>
+
+<h3>Long-running branches are kryptonite.</h3>
+
+<h3>We can land short-lived branches to &quot;dark ship&quot; new code.</h3>
+
+<h3>With science and instrumentation tools we can gather real production measurements in a controlled fashion.</h3>
+</div>
+      <div class='step' >
+    
+<h2>How to run two permission systems at the same time</h2>
+
+<h3>One system is the source of all truth.</h3>
+
+<h3>Have a migrator that creates the second system&#39;s data from the first.</h3>
+
+<h3>The data for the second system is updated by actions on the first system.</h3>
+
+<h3>Start with just a subset of users.</h3>
+
+<h3>Trash the data and re-run the migrator.</h3>
+
+<h3>Eventually never re-run the migrator.</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/caps-transitions.png" alt=""></p>
+</div>
+      <div class='step' >
+    
+<h2>The project will ebb and flow</h2>
+
+<p><br/></p>
+
+<h3>Always have enough side project work available that you can stay fresh and not get bogged down.</h3>
+
+<h3>People will come and go (and often return) on a truly long refactoring.</h3>
+
+<h3>You will be at an impasse many times.</h3>
+
+<h3>Rely on your team, and allow yourself to experiment with crazy things.</h3>
+
+<h3>Your creativity is an asset.</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/backscatter.png" alt=""></p>
+
+<h3>Sometimes it&#39;s just hard to figure out if the code you are changing is even being used. Try to be 100% safe.</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/backscatter-1.png" alt=""></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/backscatter-2.png" alt=""></p>
+
+<h3>Just a glorified wrapper around ruby&#39;s <code class='inline prettyprint'>caller</code> method.</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/nil-can.png" alt=""></p>
+
+<h3>... which can be put to holy or horrible uses.</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/horrible-people.png" alt=""></p>
+
+<h3>Because, really, we&#39;re all such horrible people.</h3>
+</div>
+      <div class='step' >
+    
+<h2>Staying alive</h2>
+
+<p><br/></p>
+
+<h3>Keep your sense of humor.</h3>
+
+<h3>Rely on your peoples.</h3>
+
+<h3>Keep close.</h3>
+
+<h3>Work-life balance is important.</h3>
+
+<h3>This is a marathon.</h3>
+
+<h3>Take a vacation.</h3>
+
+<h3>You actually can leave and do something else.</h3>
+
+<h3>It&#39;s fine.</h3>
+</div>
+      <div class='step' >
+    
+<h2>Setbacks</h2>
+
+<p><br/></p>
+
+<h3>Repository Networks were all jacked up at the model level.</h3>
+
+<h3>&nbsp;</h3>
+
+<h3>&nbsp;</h3>
+</div>
+      <div class='step' >
+    
+<h2>Setbacks</h2>
+
+<p><br/></p>
+
+<h3>Repository Networks were all jacked up at the model level.</h3>
+
+<h3>&quot;plan owner&quot; data was all shitty due to old bad job processes.</h3>
+
+<h3>&nbsp;</h3>
+</div>
+      <div class='step' >
+    
+<h2>Setbacks</h2>
+
+<p><br/></p>
+
+<h3>Repository Networks were all jacked up at the model level.</h3>
+
+<h3>&quot;plan owner&quot; data was all shitty due to old bad job processes.</h3>
+
+<h3>Forking and collaborators were all sorts of stupid.</h3>
+</div>
+      <div class='step' >
+    
+<h2>Setbacks</h2>
+
+<p><br /></p>
+
+<h3>You re-learn that you everything is connected.</h3>
+
+<h3>You end up having to fix way more things than you hoped.</h3>
+
+<h3>And you make some trade-offs and draw boundaries.</h3>
+</div>
+      <div class='step' >
+    
+<h2>Setbacks</h2>
+
+<p><br /></p>
+
+<h3>So we wrote data quality scripts to find problems.</h3>
+
+<h3>We wrote transition scripts to clean up problems.</h3>
+
+<h3>We wrote throttling tools to make massive transitions never hurt production.</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/replication-lag-throttler.png" alt=""></p>
+</div>
+      <div class='step' >
+    
+<h2>Estimation</h2>
+
+<h3>There is no way I have seen to estimate a long refactoring.</h3>
+
+<h3>What you can do is not be a blocker, and continue to negotiate what is the most important thing to fix Right Now.</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/enterprise.jpg" alt=""></p>
+
+<h2>Enterprise</h2>
+</div>
+      <div class='step' >
+    
+<h2>Enterprise</h2>
+
+<h3>Installed GitHub instances behind company firewalls.</h3>
+
+<h3>Often 6 months behind github.com code base.</h3>
+
+<h3>Customers can be 300+ days behind last Enterprise release.</h3>
+
+<h3>We have almost zero visibility into installed versions and data quality at a customer&#39;s site.</h3>
+
+<h3>There are disabled and enabled github.com features on Enterprise.</h3>
+</div>
+      <div class='step' >
+    
+<h2>Enterprise</h2>
+
+<h3>Data transitions for github.com are bundled with migrations for Enterprise upgrades.</h3>
+
+<h3>Database tables and ActiveRecord models persist in github.com code until Enterprise is fully upgraded.</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/big-ship.jpg" alt=""></p>
+
+<h2>Shipping</h2>
+</div>
+      <div class='step' >
+    
+<h2>Shipping</h2>
+
+<h3>Made abilities be the &quot;source of truth&quot; for read queries on teams, and orgs.</h3>
+
+<h3>Made abilities be the &quot;source of truth&quot; for repository read queries.</h3>
+
+<h3>Continue writing data to <em>both</em> permissions systems.</h3>
+
+<h3>Gradual removal of science experiment code.</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/last-science.jpg" alt=""></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/last-ship.png" alt=""></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/last-ship-2.png" alt=""></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/deploy-lol.png" alt=""></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/raptor.gif" alt=""></p>
+</div>
+      <div class='step' >
+    
+<h2>Other long ships</h2>
+</div>
+      <div class='step' >
+    
+<p><img src="images/rails3.png" alt=""></p>
+
+<h2>Rails 3</h2>
+
+<p><br/></p>
+
+<h3>Yup.  LOL.</h3>
+</div>
+      <div class='step' >
+    
+<p><img src="images/gitrpc.gif" alt=""></p>
+
+<h2>GitRPC</h2>
+</div>
+      <div class='step' >
+    
+<h2>Image credits:</h2>
+
+<p><a href="https://www.flickr.com/photos/mozul/31304173/">https://www.flickr.com/photos/mozul/31304173/</a>
+<a href="https://www.flickr.com/photos/uspn/4894253589/">https://www.flickr.com/photos/uspn/4894253589/</a>
+<a href="https://www.flickr.com/photos/nate_marsh/5213604228/">https://www.flickr.com/photos/nate_marsh/5213604228/</a>
+<a href="https://www.flickr.com/photos/steveallen/3324325493/">https://www.flickr.com/photos/steveallen/3324325493/</a>
+<a href="https://www.flickr.com/photos/ckrug/162099232/">https://www.flickr.com/photos/ckrug/162099232/</a>
+<a href="https://www.flickr.com/photos/slagheap/156203875/">https://www.flickr.com/photos/slagheap/156203875/</a></p>
+</div>
+      <div class='step' >
+    
+<h2>Image credits:</h2>
+
+<p><a href="https://www.flickr.com/photos/j3net/480637896/">https://www.flickr.com/photos/j3net/480637896/</a>
+<a href="https://www.flickr.com/photos/jmabel/4516193497/">https://www.flickr.com/photos/jmabel/4516193497/</a>
+<a href="https://www.flickr.com/photos/27271711@N04/3643199789/">https://www.flickr.com/photos/27271711@N04/3643199789/</a>
+<a href="https://www.flickr.com/photos/pixbymaia/9662665997/">https://www.flickr.com/photos/pixbymaia/9662665997/</a>
+<a href="https://www.flickr.com/photos/usnavy/7070501561/">https://www.flickr.com/photos/usnavy/7070501561/</a>
+<a href="https://www.flickr.com/photos/loshak/4839254506/">https://www.flickr.com/photos/loshak/4839254506/</a></p>
+
+<p><br/></p>
+
+<p><strong>Note: dat rooster is origin unknown</strong></p>
+</div>
+      <div class='step'  data-x="1000" data-scale-"2" data-rotate-y="45" data-z="10000">
+    
+<p><img src="images/riddlocat.png" alt=""></p>
+
+      </div>
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+  </body>
+</html>
+    
