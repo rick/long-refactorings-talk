@@ -168,14 +168,6 @@
 ### to make room for a new feature
 ### to prepare to fix a bug
 
-<br/>
-
-### (and usually, still, quite a bit of)
-
-<br/>
-
-## wankery
-
 ---
 
 ## optimization
